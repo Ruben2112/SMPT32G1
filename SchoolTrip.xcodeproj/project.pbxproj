@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5D665361B32C79A00053CBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D665351B32C79A00053CBE /* AppDelegate.swift */; };
+		F5D665391B32C79A00053CBE /* SchoolTrip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5D665371B32C79A00053CBE /* SchoolTrip.xcdatamodeld */; };
+		F5D6653B1B32C79A00053CBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D6653A1B32C79A00053CBE /* ViewController.swift */; };
+		F5D6653E1B32C79A00053CBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D6653C1B32C79A00053CBE /* Main.storyboard */; };
+		F5D665401B32C79A00053CBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5D6653F1B32C79A00053CBE /* Images.xcassets */; };
+		F5D665431B32C79A00053CBE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5D665411B32C79A00053CBE /* LaunchScreen.xib */; };
+		F5D6654F1B32C79A00053CBE /* SchoolTripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D6654E1B32C79A00053CBE /* SchoolTripTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5D665491B32C79A00053CBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5D665281B32C79A00053CBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5D6652F1B32C79A00053CBE;
+			remoteInfo = SchoolTrip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F5D665301B32C79A00053CBE /* SchoolTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D665341B32C79A00053CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5D665351B32C79A00053CBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5D665381B32C79A00053CBE /* SchoolTrip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SchoolTrip.xcdatamodel; sourceTree = "<group>"; };
+		F5D6653A1B32C79A00053CBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5D6653D1B32C79A00053CBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5D6653F1B32C79A00053CBE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F5D665421B32C79A00053CBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F5D665481B32C79A00053CBE /* SchoolTripTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchoolTripTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D6654D1B32C79A00053CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5D6654E1B32C79A00053CBE /* SchoolTripTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolTripTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5D6652D1B32C79A00053CBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D665451B32C79A00053CBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5D665271B32C79A00053CBE = {
+			isa = PBXGroup;
+			children = (
+				F5D665321B32C79A00053CBE /* SchoolTrip */,
+				F5D6654B1B32C79A00053CBE /* SchoolTripTests */,
+				F5D665311B32C79A00053CBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5D665311B32C79A00053CBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5D665301B32C79A00053CBE /* SchoolTrip.app */,
+				F5D665481B32C79A00053CBE /* SchoolTripTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5D665321B32C79A00053CBE /* SchoolTrip */ = {
+			isa = PBXGroup;
+			children = (
+				F5D665351B32C79A00053CBE /* AppDelegate.swift */,
+				F5D6653A1B32C79A00053CBE /* ViewController.swift */,
+				F5D6653C1B32C79A00053CBE /* Main.storyboard */,
+				F5D6653F1B32C79A00053CBE /* Images.xcassets */,
+				F5D665411B32C79A00053CBE /* LaunchScreen.xib */,
+				F5D665371B32C79A00053CBE /* SchoolTrip.xcdatamodeld */,
+				F5D665331B32C79A00053CBE /* Supporting Files */,
+			);
+			path = SchoolTrip;
+			sourceTree = "<group>";
+		};
+		F5D665331B32C79A00053CBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5D665341B32C79A00053CBE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5D6654B1B32C79A00053CBE /* SchoolTripTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5D6654E1B32C79A00053CBE /* SchoolTripTests.swift */,
+				F5D6654C1B32C79A00053CBE /* Supporting Files */,
+			);
+			path = SchoolTripTests;
+			sourceTree = "<group>";
+		};
+		F5D6654C1B32C79A00053CBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5D6654D1B32C79A00053CBE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5D6652F1B32C79A00053CBE /* SchoolTrip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5D665521B32C79A00053CBE /* Build configuration list for PBXNativeTarget "SchoolTrip" */;
+			buildPhases = (
+				F5D6652C1B32C79A00053CBE /* Sources */,
+				F5D6652D1B32C79A00053CBE /* Frameworks */,
+				F5D6652E1B32C79A00053CBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SchoolTrip;
+			productName = SchoolTrip;
+			productReference = F5D665301B32C79A00053CBE /* SchoolTrip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5D665471B32C79A00053CBE /* SchoolTripTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5D665551B32C79A00053CBE /* Build configuration list for PBXNativeTarget "SchoolTripTests" */;
+			buildPhases = (
+				F5D665441B32C79A00053CBE /* Sources */,
+				F5D665451B32C79A00053CBE /* Frameworks */,
+				F5D665461B32C79A00053CBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5D6654A1B32C79A00053CBE /* PBXTargetDependency */,
+			);
+			name = SchoolTripTests;
+			productName = SchoolTripTests;
+			productReference = F5D665481B32C79A00053CBE /* SchoolTripTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5D665281B32C79A00053CBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = fhict;
+				TargetAttributes = {
+					F5D6652F1B32C79A00053CBE = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					F5D665471B32C79A00053CBE = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = F5D6652F1B32C79A00053CBE;
+					};
+				};
+			};
+			buildConfigurationList = F5D6652B1B32C79A00053CBE /* Build configuration list for PBXProject "SchoolTrip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5D665271B32C79A00053CBE;
+			productRefGroup = F5D665311B32C79A00053CBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5D6652F1B32C79A00053CBE /* SchoolTrip */,
+				F5D665471B32C79A00053CBE /* SchoolTripTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5D6652E1B32C79A00053CBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D6653E1B32C79A00053CBE /* Main.storyboard in Resources */,
+				F5D665431B32C79A00053CBE /* LaunchScreen.xib in Resources */,
+				F5D665401B32C79A00053CBE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D665461B32C79A00053CBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5D6652C1B32C79A00053CBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D6653B1B32C79A00053CBE /* ViewController.swift in Sources */,
+				F5D665391B32C79A00053CBE /* SchoolTrip.xcdatamodeld in Sources */,
+				F5D665361B32C79A00053CBE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D665441B32C79A00053CBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D6654F1B32C79A00053CBE /* SchoolTripTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5D6654A1B32C79A00053CBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5D6652F1B32C79A00053CBE /* SchoolTrip */;
+			targetProxy = F5D665491B32C79A00053CBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5D6653C1B32C79A00053CBE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5D6653D1B32C79A00053CBE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5D665411B32C79A00053CBE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5D665421B32C79A00053CBE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5D665501B32C79A00053CBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5D665511B32C79A00053CBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5D665531B32C79A00053CBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SchoolTrip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F5D665541B32C79A00053CBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SchoolTrip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F5D665561B32C79A00053CBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SchoolTripTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SchoolTrip.app/SchoolTrip";
+			};
+			name = Debug;
+		};
+		F5D665571B32C79A00053CBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SchoolTripTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SchoolTrip.app/SchoolTrip";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5D6652B1B32C79A00053CBE /* Build configuration list for PBXProject "SchoolTrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D665501B32C79A00053CBE /* Debug */,
+				F5D665511B32C79A00053CBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5D665521B32C79A00053CBE /* Build configuration list for PBXNativeTarget "SchoolTrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D665531B32C79A00053CBE /* Debug */,
+				F5D665541B32C79A00053CBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5D665551B32C79A00053CBE /* Build configuration list for PBXNativeTarget "SchoolTripTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D665561B32C79A00053CBE /* Debug */,
+				F5D665571B32C79A00053CBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F5D665371B32C79A00053CBE /* SchoolTrip.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F5D665381B32C79A00053CBE /* SchoolTrip.xcdatamodel */,
+			);
+			currentVersion = F5D665381B32C79A00053CBE /* SchoolTrip.xcdatamodel */;
+			path = SchoolTrip.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F5D665281B32C79A00053CBE /* Project object */;
+}
