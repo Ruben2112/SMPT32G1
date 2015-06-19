@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9BED3981B341DDE004D9C87 /* LedenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BED3971B341DDE004D9C87 /* LedenViewController.swift */; };
+		D9BED39A1B342593004D9C87 /* LidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BED3991B342593004D9C87 /* LidViewController.swift */; };
+		D9BED39D1B34339F004D9C87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9BED39B1B34339F004D9C87 /* Main.storyboard */; };
+		D9CB88161B340CD500E16F18 /* AfspraakMakenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CB88151B340CD500E16F18 /* AfspraakMakenViewController.swift */; };
+		D9F977601B33F31C00F17475 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F9775F1B33F31C00F17475 /* Constants.swift */; };
+		D9F977621B33F6C800F17475 /* InlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F977611B33F6C800F17475 /* InlogViewController.swift */; };
+		D9F977641B33FD5E00F17475 /* AfspraakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F977631B33FD5E00F17475 /* AfspraakViewController.swift */; };
 		F5D665361B32C79A00053CBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D665351B32C79A00053CBE /* AppDelegate.swift */; };
 		F5D665391B32C79A00053CBE /* SchoolTrip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5D665371B32C79A00053CBE /* SchoolTrip.xcdatamodeld */; };
 		F5D6653B1B32C79A00053CBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D6653A1B32C79A00053CBE /* ViewController.swift */; };
-		F5D6653E1B32C79A00053CBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D6653C1B32C79A00053CBE /* Main.storyboard */; };
 		F5D665401B32C79A00053CBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5D6653F1B32C79A00053CBE /* Images.xcassets */; };
 		F5D665431B32C79A00053CBE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5D665411B32C79A00053CBE /* LaunchScreen.xib */; };
 		F5D6654F1B32C79A00053CBE /* SchoolTripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D6654E1B32C79A00053CBE /* SchoolTripTests.swift */; };
@@ -27,12 +33,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D9BED3971B341DDE004D9C87 /* LedenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LedenViewController.swift; sourceTree = "<group>"; };
+		D9BED3991B342593004D9C87 /* LidViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LidViewController.swift; path = ../LidViewController.swift; sourceTree = "<group>"; };
+		D9BED39C1B34339F004D9C87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9CB88151B340CD500E16F18 /* AfspraakMakenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfspraakMakenViewController.swift; sourceTree = "<group>"; };
+		D9F9775F1B33F31C00F17475 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D9F977611B33F6C800F17475 /* InlogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InlogViewController.swift; sourceTree = "<group>"; };
+		D9F977631B33FD5E00F17475 /* AfspraakViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfspraakViewController.swift; sourceTree = "<group>"; };
 		F5D665301B32C79A00053CBE /* SchoolTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D665341B32C79A00053CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5D665351B32C79A00053CBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5D665381B32C79A00053CBE /* SchoolTrip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SchoolTrip.xcdatamodel; sourceTree = "<group>"; };
 		F5D6653A1B32C79A00053CBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F5D6653D1B32C79A00053CBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5D6653F1B32C79A00053CBE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F5D665421B32C79A00053CBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F5D665481B32C79A00053CBE /* SchoolTripTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchoolTripTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,13 +91,19 @@
 		F5D665321B32C79A00053CBE /* SchoolTrip */ = {
 			isa = PBXGroup;
 			children = (
+				D9BED3991B342593004D9C87 /* LidViewController.swift */,
 				F5D665351B32C79A00053CBE /* AppDelegate.swift */,
 				F5D6653A1B32C79A00053CBE /* ViewController.swift */,
-				F5D6653C1B32C79A00053CBE /* Main.storyboard */,
 				F5D6653F1B32C79A00053CBE /* Images.xcassets */,
+				D9BED39B1B34339F004D9C87 /* Main.storyboard */,
 				F5D665411B32C79A00053CBE /* LaunchScreen.xib */,
 				F5D665371B32C79A00053CBE /* SchoolTrip.xcdatamodeld */,
 				F5D665331B32C79A00053CBE /* Supporting Files */,
+				D9F9775F1B33F31C00F17475 /* Constants.swift */,
+				D9F977611B33F6C800F17475 /* InlogViewController.swift */,
+				D9F977631B33FD5E00F17475 /* AfspraakViewController.swift */,
+				D9CB88151B340CD500E16F18 /* AfspraakMakenViewController.swift */,
+				D9BED3971B341DDE004D9C87 /* LedenViewController.swift */,
 			);
 			path = SchoolTrip;
 			sourceTree = "<group>";
@@ -195,7 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5D6653E1B32C79A00053CBE /* Main.storyboard in Resources */,
+				D9BED39D1B34339F004D9C87 /* Main.storyboard in Resources */,
 				F5D665431B32C79A00053CBE /* LaunchScreen.xib in Resources */,
 				F5D665401B32C79A00053CBE /* Images.xcassets in Resources */,
 			);
@@ -215,9 +233,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9F977621B33F6C800F17475 /* InlogViewController.swift in Sources */,
+				D9F977641B33FD5E00F17475 /* AfspraakViewController.swift in Sources */,
 				F5D6653B1B32C79A00053CBE /* ViewController.swift in Sources */,
+				D9BED3981B341DDE004D9C87 /* LedenViewController.swift in Sources */,
 				F5D665391B32C79A00053CBE /* SchoolTrip.xcdatamodeld in Sources */,
 				F5D665361B32C79A00053CBE /* AppDelegate.swift in Sources */,
+				D9F977601B33F31C00F17475 /* Constants.swift in Sources */,
+				D9BED39A1B342593004D9C87 /* LidViewController.swift in Sources */,
+				D9CB88161B340CD500E16F18 /* AfspraakMakenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,10 +264,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F5D6653C1B32C79A00053CBE /* Main.storyboard */ = {
+		D9BED39B1B34339F004D9C87 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F5D6653D1B32C79A00053CBE /* Base */,
+				D9BED39C1B34339F004D9C87 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -409,6 +433,7 @@
 				F5D665541B32C79A00053CBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5D665551B32C79A00053CBE /* Build configuration list for PBXNativeTarget "SchoolTripTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +442,7 @@
 				F5D665571B32C79A00053CBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
