@@ -9,7 +9,7 @@
 import Foundation
 
 class Constants{
-    static var IPAdress = "77.174.176.114"
+    static var IPAdress = "http://77.174.176.114"
     
     static var urlAfspraak = "/selectAFSRPAAK.php"
     static var urlPOI = "/selectPOI.php"

@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>4D9134A3-7ECA-462B-9B0C-D4EB93A25E1D</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>SchoolTrip</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>4A241D40953D290588E607E7936607153123367D</key>
 		<string>https://github.com/spmvanmierlo/SMPT32G1.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SchoolTrip.xcodeproj/project.xcworkspace</string>
+	<string>SchoolTrip.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>4A241D40953D290588E607E7936607153123367D</key>
