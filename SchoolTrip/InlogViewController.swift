@@ -35,20 +35,31 @@ class InlogViewController : UIViewController {
         println(tbNaam.text)
         println(tbGroepsCode.text)
         
-        var access = checkGroep(tbGroepsCode.text, naam: tbNaam.text)
-        println(access)
-        
-        
-        self.performSegueWithIdentifier("LoginToTab", sender: nil)
-        if(access == "true"){
-            println("EINDELIJK")
-            
-            
-
-        }else{
-            println("FUCKER")
+        var url = Constants.getIpAdress() + Constants.checkGroup(tbGroepsCode.text, naam: tbNaam.text)
+        var s = ""
+        request(.GET, url, parameters: nil)
+            .responseJSON { (request, response, json, error) in
+                if(error != nil) {
+                    NSLog("Error: \(error)")
+                    println(request)
+                    println(response)
+                }
+                else {
+                    var json = JSON(json!)                    
+                    for(key: String, subJson: JSON) in json {
+                        println(subJson.string)
+                        if(subJson.string?.rangeOfString("true") != nil){
+                            s = "true"
+                            self.performSegueWithIdentifier("LoginToTab", sender: nil)
+                            break
+                        } else{
+                            s = "false"
+                            break
+                        }
+                    }
+                }
         }
-        
+
     }
     
     func getPOI() -> [POI] {
@@ -63,7 +74,6 @@ class InlogViewController : UIViewController {
                     println(response)
                 }
                 else {
-                    NSLog("Success: \(url)")
                     var json = JSON(json!)
                     //If json is .Dictionary
                     for (key: String, subJson: JSON) in json {
@@ -135,14 +145,10 @@ class InlogViewController : UIViewController {
                     NSLog("Success: \(url)")
                     var json = JSON(json!)
                     var string = json[0].string!
-                    println(string)
                     s = string
                 
                 }
             }
-        
-        
-        
         if(s == "true"){
             
             return "true"
