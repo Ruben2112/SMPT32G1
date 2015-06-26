@@ -67,7 +67,7 @@
         <!--Tijdlijn-->
         <scene sceneID="kSK-NB-Ysl">
             <objects>
-                <viewController title="Tijdlijn" id="iNK-tw-7k2" sceneMemberID="viewController">
+                <viewController title="Tijdlijn" id="iNK-tw-7k2" customClass="TijdlijnViewController" customModule="SchoolTrip" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Oy-1I-YZp"/>
                         <viewControllerLayoutGuide type="bottom" id="X6d-Qk-1pW"/>
@@ -101,6 +101,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="iNK-tw-7k2" id="XVG-eQ-sVK"/>
+                                    <outlet property="delegate" destination="iNK-tw-7k2" id="No8-6J-h80"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

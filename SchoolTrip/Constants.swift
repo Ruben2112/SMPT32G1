@@ -26,6 +26,16 @@ class Constants{
     static var groepsCode = ""
     static var afspraken = [AFSPRAAK]()
     
+    static var afbeeldingen = [AFBEELDING]()
+    
+    static func getAfbeeldingen() -> [AFBEELDING] {
+        return self.afbeeldingen
+    }
+    
+    static func setAfbeeldingen(afbeelding:AFBEELDING){
+        self.afbeeldingen.append(afbeelding)
+    }
+    
     static func getLeden() -> [LID]{
         
         var c = self.getGroepsCode()
@@ -183,6 +193,33 @@ class Constants{
                 }
         }
     
+    }
+    
+    static func getAfbeeldingJSON(){
+        
+        var url = Constants.getIpAdress() + Constants.getAfbeeldingUrl()
+        var leden : [AFBEELDING] = []
+        request(.GET, url, parameters: nil)
+            .responseJSON { (request, response, json, error) in
+                if(error != nil) {
+                    NSLog("Error: \(error)")
+                    println(request)
+                    println(response)
+                }
+                else {
+                    NSLog("Success: \(url)")
+                    var json = JSON(json!)
+                    //If json is .Dictionary
+                    for (key: String, subJson: JSON) in json {
+                        var id = subJson["id"].string
+                        var lidid = subJson["lidid"].string
+                        var beheerder = subJson["datum"].string
+                        var url = subJson["url"].string
+                        var verwijderd = subJson["verwijderd"].string
+                        //TOEVOEGEN
+                    }
+                }
+        }
     }
     
 }

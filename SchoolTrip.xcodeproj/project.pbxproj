@@ -18,6 +18,8 @@
 		D9F977641B33FD5E00F17475 /* AfspraakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F977631B33FD5E00F17475 /* AfspraakViewController.swift */; };
 		D9FCEB321B3D4374004022A5 /* AFSPRAAK.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FCEB311B3D4374004022A5 /* AFSPRAAK.swift */; };
 		D9FCEB341B3D6A94004022A5 /* LID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FCEB331B3D6A94004022A5 /* LID.swift */; };
+		D9FCEB361B3D86E2004022A5 /* TijdlijnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FCEB351B3D86E2004022A5 /* TijdlijnViewController.swift */; };
+		D9FCEB381B3D910B004022A5 /* AFBEELDING.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FCEB371B3D910B004022A5 /* AFBEELDING.swift */; };
 		F5D665361B32C79A00053CBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D665351B32C79A00053CBE /* AppDelegate.swift */; };
 		F5D665391B32C79A00053CBE /* SchoolTrip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5D665371B32C79A00053CBE /* SchoolTrip.xcdatamodeld */; };
 		F5D6653B1B32C79A00053CBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D6653A1B32C79A00053CBE /* ViewController.swift */; };
@@ -52,6 +54,8 @@
 		D9F977631B33FD5E00F17475 /* AfspraakViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfspraakViewController.swift; sourceTree = "<group>"; };
 		D9FCEB311B3D4374004022A5 /* AFSPRAAK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFSPRAAK.swift; sourceTree = "<group>"; };
 		D9FCEB331B3D6A94004022A5 /* LID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LID.swift; sourceTree = "<group>"; };
+		D9FCEB351B3D86E2004022A5 /* TijdlijnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TijdlijnViewController.swift; sourceTree = "<group>"; };
+		D9FCEB371B3D910B004022A5 /* AFBEELDING.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFBEELDING.swift; sourceTree = "<group>"; };
 		F5D665301B32C79A00053CBE /* SchoolTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D665341B32C79A00053CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5D665351B32C79A00053CBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 				D9031DAA1B3BEC9800E40AA1 /* GROEP.swift */,
 				D9FCEB311B3D4374004022A5 /* AFSPRAAK.swift */,
 				D9FCEB331B3D6A94004022A5 /* LID.swift */,
+				D9FCEB371B3D910B004022A5 /* AFBEELDING.swift */,
 			);
 			name = BusinessLayer;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 				D9F977631B33FD5E00F17475 /* AfspraakViewController.swift */,
 				D9CB88151B340CD500E16F18 /* AfspraakMakenViewController.swift */,
 				D9BED3971B341DDE004D9C87 /* LedenViewController.swift */,
+				D9FCEB351B3D86E2004022A5 /* TijdlijnViewController.swift */,
 			);
 			path = SchoolTrip;
 			sourceTree = "<group>";
@@ -288,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D99485981B344A60003AA01E /* POI.swift in Sources */,
+				D9FCEB381B3D910B004022A5 /* AFBEELDING.swift in Sources */,
 				D9F977621B33F6C800F17475 /* InlogViewController.swift in Sources */,
 				D9F977641B33FD5E00F17475 /* AfspraakViewController.swift in Sources */,
 				F5FCA3271B3D360E004A4974 /* Alamofire.swift in Sources */,
@@ -301,6 +308,7 @@
 				F5D665361B32C79A00053CBE /* AppDelegate.swift in Sources */,
 				D9F977601B33F31C00F17475 /* Constants.swift in Sources */,
 				D9BED39A1B342593004D9C87 /* LidViewController.swift in Sources */,
+				D9FCEB361B3D86E2004022A5 /* TijdlijnViewController.swift in Sources */,
 				D9CB88161B340CD500E16F18 /* AfspraakMakenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
