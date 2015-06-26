@@ -11,7 +11,7 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>4A241D40953D290588E607E7936607153123367D</key>
-		<string>https://github.com/Ruben2112/SMPT32G1.git</string>
+		<string>https://github.com/spmvanmierlo/SMPT32G1.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>SchoolTrip.xcodeproj</string>
@@ -21,7 +21,7 @@
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Ruben2112/SMPT32G1.git</string>
+	<string>https://github.com/spmvanmierlo/SMPT32G1.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
