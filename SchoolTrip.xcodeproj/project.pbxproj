@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9031DAB1B3BEC9800E40AA1 /* GROEP.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9031DAA1B3BEC9800E40AA1 /* GROEP.swift */; };
 		D994858B1B343E58003AA01E /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99485821B343E58003AA01E /* Alamofire.swift */; };
 		D994858C1B343E58003AA01E /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99485831B343E58003AA01E /* Download.swift */; };
 		D994858D1B343E58003AA01E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D99485841B343E58003AA01E /* Info.plist */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D9031DAA1B3BEC9800E40AA1 /* GROEP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GROEP.swift; sourceTree = "<group>"; };
 		D99485811B343E58003AA01E /* Alamofire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Alamofire.h; path = "../../Downloads/Alamofire-master 2/Source/Alamofire.h"; sourceTree = "<group>"; };
 		D99485821B343E58003AA01E /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = "../../Downloads/Alamofire-master 2/Source/Alamofire.swift"; sourceTree = "<group>"; };
 		D99485831B343E58003AA01E /* Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Download.swift; path = "../../Downloads/Alamofire-master 2/Source/Download.swift"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				D99485971B344A60003AA01E /* POI.swift */,
+				D9031DAA1B3BEC9800E40AA1 /* GROEP.swift */,
 			);
 			name = BusinessLayer;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				D9BED3981B341DDE004D9C87 /* LedenViewController.swift in Sources */,
 				F5D665391B32C79A00053CBE /* SchoolTrip.xcdatamodeld in Sources */,
 				D99485901B343E58003AA01E /* Request.swift in Sources */,
+				D9031DAB1B3BEC9800E40AA1 /* GROEP.swift in Sources */,
 				F5D665361B32C79A00053CBE /* AppDelegate.swift in Sources */,
 				D994858E1B343E58003AA01E /* Manager.swift in Sources */,
 				D9F977601B33F31C00F17475 /* Constants.swift in Sources */,

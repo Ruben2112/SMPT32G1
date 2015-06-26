@@ -41,6 +41,10 @@ class Constants{
         return self.urlGroep
     }
     
+    static func checkGroup(code:String , naam : String) -> String{
+        
+        return "/checkGroup.php?code=\(code)&naam=\(naam)"
+    }
     
     
 }

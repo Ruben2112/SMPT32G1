@@ -48,7 +48,6 @@
                                 </state>
                                 <connections>
                                     <action selector="Login:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4bg-QS-HIV"/>
-                                    <segue destination="Osu-uY-7h3" kind="show" id="Z5R-Sx-NWM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -62,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-360.5" y="-543.5"/>
+            <point key="canvasLocation" x="-278.5" y="-543.5"/>
         </scene>
         <!--Tijdlijn-->
         <scene sceneID="kSK-NB-Ysl">
@@ -232,7 +231,7 @@
         <!--Main-->
         <scene sceneID="YEa-Jp-THY">
             <objects>
-                <tabBarController title="Main" id="Osu-uY-7h3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="UITabBarController" title="Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Osu-uY-7h3" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="nzd-QK-FkX"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -245,11 +244,12 @@
                         <segue destination="D2B-wc-Jaa" kind="relationship" relationship="viewControllers" id="sSy-cd-CZg"/>
                         <segue destination="iNK-tw-7k2" kind="relationship" relationship="viewControllers" id="4cQ-lr-Lk2"/>
                         <segue destination="h6H-dS-Sf0" kind="relationship" relationship="viewControllers" id="eND-vB-j4d"/>
+                        <segue destination="vXZ-lx-hvc" kind="show" id="k5f-Zc-QLJ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OBn-jq-Lil" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="316.5" y="-543.5"/>
+            <point key="canvasLocation" x="303.5" y="-543.5"/>
         </scene>
         <!--LedenViewController-->
         <scene sceneID="DaE-XX-a5J">
