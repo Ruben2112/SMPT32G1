@@ -13,13 +13,14 @@ class AfspraakViewController : UIViewController, UITableViewDelegate, UITableVie
     
     
     @IBOutlet weak var TableViewAfspraak: UITableView!
-    
+    var afspraken = Constants.getAfspraken()
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //TableViewAfspraak.delegate = self
         
         println("Afspraak controller")
+        println(afspraken.count)
     }
     
     override func didReceiveMemoryWarning() {
@@ -30,13 +31,13 @@ class AfspraakViewController : UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         //Aantal rows
-        return 3
+        return afspraken.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "AfspraakCell")
         
-        cell.textLabel?.text = Constants.getAfbeeldingUrl()
+        cell.textLabel?.text = afspraken[indexPath.row].tijdstip
         
         return cell;
     }

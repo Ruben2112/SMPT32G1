@@ -34,7 +34,8 @@ class InlogViewController : UIViewController {
         println("login button")
         println(tbNaam.text)
         println(tbGroepsCode.text)
-        
+        Constants.setGroepsCode(self.tbGroepsCode.text)
+        getGroepen()
         var url = Constants.getIpAdress() + Constants.checkGroup(tbGroepsCode.text, naam: tbNaam.text)
         var s = ""
         request(.GET, url, parameters: nil)
@@ -51,6 +52,7 @@ class InlogViewController : UIViewController {
                         if(subJson.string?.rangeOfString("true") != nil){
                             s = "true"
                             self.performSegueWithIdentifier("LoginToTab", sender: nil)
+                            
                             break
                         } else{
                             s = "false"
@@ -59,7 +61,8 @@ class InlogViewController : UIViewController {
                     }
                 }
         }
-
+        
+        getAfspraken()
     }
     
     func getPOI() -> [POI] {
@@ -124,15 +127,16 @@ class InlogViewController : UIViewController {
                         
                         var groep = GROEP(id: id!, datum: datum!, lidcode: lidcode!, beheercode: beheerderscode!)
                         groeps.append(groep)
+                        Constants.setGroep(groep)
                     }
                 }
         }
         return groeps
     }
     
-    func checkGroep(code : String, naam : String) -> String{
+    func getAfspraken(){
        
-        var url = Constants.getIpAdress() + Constants.checkGroup(code, naam: naam)
+        var url = Constants.getIpAdress() + Constants.getAfspraakUrl()
         var s = ""
         request(.GET, url, parameters: nil)
             .responseJSON { (request, response, json, error) in
@@ -144,20 +148,21 @@ class InlogViewController : UIViewController {
                 else {
                     NSLog("Success: \(url)")
                     var json = JSON(json!)
-                    var string = json[0].string!
-                    s = string
+                    for (key: String, subJson: JSON) in json {
+                     var id = subJson["id"].string
+                        var groepsId = subJson["groepsId"].string
+                        var POIid = subJson["POIid"].string
+                        var tijdstip = subJson["tijdstip"].string
+                        var aanwezigheidsstatus = subJson["aanwezigheidstatus"].string
+                        
+                        var afspraak = AFSPRAAK(id: id!, groepsId: groepsId!, POIid: POIid!, tijdstip: tijdstip!, aanwezigheidsstatus: aanwezigheidsstatus!)
+                        Constants.setAfspraak(afspraak)
+                        
+                    }
+                    
                 
                 }
             }
-        if(s == "true"){
-            
-            return "true"
-            
-            
-        }
-        else{
-            return "false"
-        }
     }
     
 }

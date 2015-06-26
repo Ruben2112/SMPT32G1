@@ -16,6 +16,7 @@
 		D9F977601B33F31C00F17475 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F9775F1B33F31C00F17475 /* Constants.swift */; };
 		D9F977621B33F6C800F17475 /* InlogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F977611B33F6C800F17475 /* InlogViewController.swift */; };
 		D9F977641B33FD5E00F17475 /* AfspraakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F977631B33FD5E00F17475 /* AfspraakViewController.swift */; };
+		D9FCEB321B3D4374004022A5 /* AFSPRAAK.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FCEB311B3D4374004022A5 /* AFSPRAAK.swift */; };
 		F5D665361B32C79A00053CBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D665351B32C79A00053CBE /* AppDelegate.swift */; };
 		F5D665391B32C79A00053CBE /* SchoolTrip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5D665371B32C79A00053CBE /* SchoolTrip.xcdatamodeld */; };
 		F5D6653B1B32C79A00053CBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D6653A1B32C79A00053CBE /* ViewController.swift */; };
@@ -48,6 +49,7 @@
 		D9F9775F1B33F31C00F17475 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D9F977611B33F6C800F17475 /* InlogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InlogViewController.swift; sourceTree = "<group>"; };
 		D9F977631B33FD5E00F17475 /* AfspraakViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AfspraakViewController.swift; sourceTree = "<group>"; };
+		D9FCEB311B3D4374004022A5 /* AFSPRAAK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFSPRAAK.swift; sourceTree = "<group>"; };
 		F5D665301B32C79A00053CBE /* SchoolTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D665341B32C79A00053CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5D665351B32C79A00053CBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			children = (
 				D99485971B344A60003AA01E /* POI.swift */,
 				D9031DAA1B3BEC9800E40AA1 /* GROEP.swift */,
+				D9FCEB311B3D4374004022A5 /* AFSPRAAK.swift */,
 			);
 			name = BusinessLayer;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				F5D6653B1B32C79A00053CBE /* ViewController.swift in Sources */,
 				D9BED3981B341DDE004D9C87 /* LedenViewController.swift in Sources */,
 				F5D665391B32C79A00053CBE /* SchoolTrip.xcdatamodeld in Sources */,
+				D9FCEB321B3D4374004022A5 /* AFSPRAAK.swift in Sources */,
 				D9031DAB1B3BEC9800E40AA1 /* GROEP.swift in Sources */,
 				F5D665361B32C79A00053CBE /* AppDelegate.swift in Sources */,
 				D9F977601B33F31C00F17475 /* Constants.swift in Sources */,
