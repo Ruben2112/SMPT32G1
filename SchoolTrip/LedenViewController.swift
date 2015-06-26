@@ -11,8 +11,11 @@ import UIKit
 
 class LedenViewController : UIViewController, UITableViewDelegate, UITableViewDataSource{
     
+    var leden = Constants.getLeden()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        leden = Constants.getLeden()
     }
     
     override func didReceiveMemoryWarning() {
@@ -23,13 +26,13 @@ class LedenViewController : UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         //Aantal rows
-        return 3
+        return leden.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "AfspraakCell")
         
-        cell.textLabel?.text = "Leden"
+        cell.textLabel?.text = leden[indexPath.row].naam
         
         return cell;
     }

@@ -27,15 +27,11 @@ class InlogViewController : UIViewController {
     
     @IBAction func Login(sender: AnyObject) {
         
-        
-        //getPOI()
-        //getGroepen()
-        
         println("login button")
         println(tbNaam.text)
         println(tbGroepsCode.text)
         Constants.setGroepsCode(self.tbGroepsCode.text)
-        getGroepen()
+        Constants.getGroepenJSON()
         var url = Constants.getIpAdress() + Constants.checkGroup(tbGroepsCode.text, naam: tbNaam.text)
         var s = ""
         request(.GET, url, parameters: nil)
@@ -51,6 +47,7 @@ class InlogViewController : UIViewController {
                         println(subJson.string)
                         if(subJson.string?.rangeOfString("true") != nil){
                             s = "true"
+                            Constants.getLedenJSON()
                             self.performSegueWithIdentifier("LoginToTab", sender: nil)
                             
                             break
@@ -103,36 +100,7 @@ class InlogViewController : UIViewController {
         return pointOfInterest
 
     }
-    
-    func getGroepen() -> [GROEP]{
-        
-        var url = Constants.getIpAdress() + Constants.getGroepUrl()
-        var groeps : [GROEP] = []
-        request(.GET, url, parameters: nil)
-            .responseJSON { (request, response, json, error) in
-                if(error != nil) {
-                    NSLog("Error: \(error)")
-                    println(request)
-                    println(response)
-                }
-                else {
-                    NSLog("Success: \(url)")
-                    var json = JSON(json!)
-                    //If json is .Dictionary
-                    for (key: String, subJson: JSON) in json {
-                        var id = subJson["id"].string
-                        var datum = subJson["datum"].string
-                        var lidcode = subJson["lidcode"].string
-                        var beheerderscode = subJson["beheerderscode"].string
-                        
-                        var groep = GROEP(id: id!, datum: datum!, lidcode: lidcode!, beheercode: beheerderscode!)
-                        groeps.append(groep)
-                        Constants.setGroep(groep)
-                    }
-                }
-        }
-        return groeps
-    }
+
     
     func getAfspraken(){
        
