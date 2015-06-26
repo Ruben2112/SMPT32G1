@@ -37,8 +37,14 @@ class InlogViewController : UIViewController {
         
         var access = checkGroep(tbGroepsCode.text, naam: tbNaam.text)
         println(access)
+        
+        
+        self.performSegueWithIdentifier("LoginToTab", sender: nil)
         if(access == "true"){
             println("EINDELIJK")
+            
+            
+
         }else{
             println("FUCKER")
         }
