@@ -224,6 +224,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="POIpicker" destination="QgS-qe-alu" id="D4h-Gi-elc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fk4-Rp-1ee" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
