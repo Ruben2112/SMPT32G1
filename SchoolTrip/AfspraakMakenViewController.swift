@@ -13,14 +13,15 @@ class AfspraakMakenViewController : UIViewController, UIPickerViewDelegate, UIPi
 
     
     @IBOutlet weak var POIpicker: UIPickerView!
+    @IBOutlet weak var timePicker: UIDatePicker!
     var POIs : [POI] = []
-    
+    var date : NSDate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         println("Afspraak maken controller")
         getPOI()
-        
+        timePicker.addTarget(self, action: Selector("datePickerChanged:"), forControlEvents: UIControlEvents.ValueChanged)
     }
     
     override func didReceiveMemoryWarning() {
@@ -60,8 +61,47 @@ class AfspraakMakenViewController : UIViewController, UIPickerViewDelegate, UIPi
         return (soort + POIs[row].naam)
     }
 
+    func datePickerChanged(datePicker:UIDatePicker) {
+        var dateFormatter = NSDateFormatter()
+        
+        dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
+        dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
+        
+        date = datePicker.date
+    }
     
     @IBAction func btnSave(sender: AnyObject) {
+        var c = Constants.getGroepsCode()
+        var id = ""
+        for x in Constants.groepen {
+            if(x.lidcode == c || x.beheercode == c){
+                id = x.id
+            }
+        }
+        var selectedPOI = POIs[POIpicker.selectedRowInComponent(Int())]
+
+        let calendar = NSCalendar.currentCalendar()
+        let comp = calendar.components((.CalendarUnitHour | .CalendarUnitMinute), fromDate: date!)
+        
+        let time = (String(comp.hour) + ":" + String(comp.minute))
+        println("Groepid = " + id)
+        println("POI = " + selectedPOI.naam)
+        println("Tijdstip = " + time)
+        
+        var url = (Constants.urlNewAfspraak + "?groepsid=" + id + "&POIid=" + selectedPOI.id + "&tijdstip=" + time + "&aanwezig=0")
+        println(url)
+        
+        request(.GET, url, parameters: nil)
+            .responseJSON { (request, response, json, error) in
+                if(error != nil) {
+                    NSLog("Error: \(error)")
+                }
+                else {
+                    NSLog("Success: \(url)")
+                    println("Afspraak succesvol toegevoegd")
+                }
+        }
+
         
         navigationController?.popToRootViewControllerAnimated(true)
         

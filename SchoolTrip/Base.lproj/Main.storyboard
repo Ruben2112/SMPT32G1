@@ -226,6 +226,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="POIpicker" destination="QgS-qe-alu" id="D4h-Gi-elc"/>
+                        <outlet property="timePicker" destination="o68-2j-Y8Y" id="uyy-L3-yLB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fk4-Rp-1ee" userLabel="First Responder" sceneMemberID="firstResponder"/>

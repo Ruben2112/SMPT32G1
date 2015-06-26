@@ -17,6 +17,9 @@ class Constants{
     static var urlAfbeelding = "/selectAFBEELDING.php"
     static var urlGroep = "/selectGROEP.php"
     
+    // Voorbeeld: http://77.174.176.114/insertAFSPRAAK.php?groepsid=7&POIid=12&tijdstip=11:15&aanwezig=1
+    static var urlNewAfspraak = "http://77.174.176.114/insertAFSPRAAK.php"
+    
     static var groepen = [GROEP]()
     
     static var groepsCode = ""
