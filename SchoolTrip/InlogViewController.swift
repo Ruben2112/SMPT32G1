@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SwiftyJSON
 
 class InlogViewController : UIViewController {
     
@@ -48,7 +49,8 @@ class InlogViewController : UIViewController {
     func getPOI() -> [POI] {
         var url = Constants.getIpAdress() + Constants.getPOIUrl()
         var pointOfInterest : [POI] = []
-        request(.GET, url, parameters: nil)
+        
+         request(.GET, url, parameters: nil)
             .responseJSON { (request, response, json, error) in
                 if(error != nil) {
                     NSLog("Error: \(error)")
