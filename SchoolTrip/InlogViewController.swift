@@ -32,6 +32,7 @@ class InlogViewController : UIViewController {
         println(tbGroepsCode.text)
         Constants.setGroepsCode(self.tbGroepsCode.text)
         Constants.getGroepenJSON()
+        Constants.getAfbeeldingJSON()
         var url = Constants.getIpAdress() + Constants.checkGroup(tbGroepsCode.text, naam: tbNaam.text)
         var s = ""
         request(.GET, url, parameters: nil)
@@ -131,6 +132,5 @@ class InlogViewController : UIViewController {
                 
                 }
             }
-    }
-    
+    }    
 }

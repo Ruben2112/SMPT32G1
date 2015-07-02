@@ -102,7 +102,7 @@ class AfspraakMakenViewController : UIViewController, UIPickerViewDelegate, UIPi
                 }
         }
 
-        
+        getAfspraken()
         navigationController?.popToRootViewControllerAnimated(true)
         
     }
@@ -145,6 +145,39 @@ class AfspraakMakenViewController : UIViewController, UIPickerViewDelegate, UIPi
                 }
         }
         
+    }
+    
+    func getAfspraken(){
+        
+        var url = Constants.getIpAdress() + Constants.getAfspraakUrl()
+        var s = ""
+        request(.GET, url, parameters: nil)
+            .responseJSON { (request, response, json, error) in
+                if(error != nil) {
+                    NSLog("Error: \(error)")
+                    println(request)
+                    println(response)
+                }
+                else {
+                    NSLog("Success: \(url)")
+                    Constants.resetAfspraken()
+                    var json = JSON(json!)
+                    for (key: String, subJson: JSON) in json {
+                        var id = subJson["id"].string
+                        var groepsId = subJson["groepsId"].string
+                        var POIid = subJson["POIid"].string
+                        var tijdstip = subJson["tijdstip"].string
+                        var aanwezigheidsstatus = subJson["aanwezigheidstatus"].string
+                        
+                        var afspraak = AFSPRAAK(id: id!, groepsId: groepsId!, POIid: POIid!, tijdstip: tijdstip!, aanwezigheidsstatus: aanwezigheidsstatus!)
+                        
+                        Constants.setAfspraak(afspraak)
+                        
+                    }
+                    
+                    
+                }
+        }
     }
 
     

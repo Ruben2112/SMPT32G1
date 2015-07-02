@@ -36,6 +36,10 @@ class Constants{
         self.afbeeldingen.append(afbeelding)
     }
     
+    static func resetAfspraken(){
+        self.afspraken = [AFSPRAAK]()
+    }
+    
     static func getLeden() -> [LID]{
         
         var c = self.getGroepsCode()
@@ -213,10 +217,15 @@ class Constants{
                     for (key: String, subJson: JSON) in json {
                         var id = subJson["id"].string
                         var lidid = subJson["lidid"].string
-                        var beheerder = subJson["datum"].string
+                        var datum = subJson["datum"].string
                         var url = subJson["url"].string
                         var verwijderd = subJson["verwijderd"].string
                         //TOEVOEGEN
+                        
+                        var a = AFBEELDING(id: id!, lidId: lidid!, datum: datum!, url: url!, verwijderd: verwijderd!
+                        )
+                        self.setAfbeeldingen(a)                       
+                        
                     }
                 }
         }

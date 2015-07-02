@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class AfspraakViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
+class AfspraakViewController : UIViewController, UITableViewDelegate, UITableViewDataSource  {
     
     
     @IBOutlet weak var TableViewAfspraak: UITableView!
@@ -21,6 +21,14 @@ class AfspraakViewController : UIViewController, UITableViewDelegate, UITableVie
         
         println("Afspraak controller")
         println(afspraken.count)
+        self.afspraken = Constants.getAfspraken()
+        
+        if(self.TableViewAfspraak != nil)
+        {
+            self.TableViewAfspraak.reloadData()
+        }
+        
+    
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,6 +49,8 @@ class AfspraakViewController : UIViewController, UITableViewDelegate, UITableVie
         
         return cell;
     }
+    
+    
     
     
 }
